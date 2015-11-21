@@ -66,5 +66,89 @@ namespace Parking_Queue_MonteVerdeSoft.App_Business
                 return false;
             }
         }
+
+        public DataTable setClientName(string name)
+        {
+            DataTable clientName = new DataTable();
+            SqlConnection connection = ManageDatabaseConnection("Open");
+            using (SqlCommand insert = new SqlCommand(@"INSERT_CLIENT", connection))
+            {
+                insert.CommandType = CommandType.StoredProcedure;
+                insert.Parameters.Add("@name", SqlDbType.VarChar).Value = name;
+                SqlDataAdapter adap = new SqlDataAdapter(insert);
+            }
+            connection = ManageDatabaseConnection("Close");
+            return clientName;
+        }
+
+        public DataTable setClientPassword(string password)
+        {
+            DataTable clientPassword = new DataTable();
+            SqlConnection connection = ManageDatabaseConnection("Open");
+            using (SqlCommand insert = new SqlCommand(@"INSERT_CLIENT", connection))
+            {
+                insert.CommandType = CommandType.StoredProcedure;
+                insert.Parameters.Add("@password", SqlDbType.VarChar).Value = password;
+                SqlDataAdapter adap = new SqlDataAdapter(insert);
+            }
+            connection = ManageDatabaseConnection("Close");
+            return clientPassword;
+        }
+
+        public DataTable setClientPhone(int phone)
+        {
+            DataTable clientPhone = new DataTable();
+            SqlConnection connection = ManageDatabaseConnection("Open");
+            using (SqlCommand insert = new SqlCommand(@"INSERT_CLIENT", connection))
+            {
+                insert.CommandType = CommandType.StoredProcedure;
+                insert.Parameters.Add("@phone", SqlDbType.VarChar).Value = phone;
+                SqlDataAdapter adap = new SqlDataAdapter(insert);
+            }
+            connection = ManageDatabaseConnection("Close");
+            return clientPhone;
+        }
+        public DataTable setClientEmail(string email)
+        {
+            DataTable clientEmail = new DataTable();
+            SqlConnection connection = ManageDatabaseConnection("Open");
+            using (SqlCommand insert = new SqlCommand(@"INSERT_CLIENT", connection))
+            {
+                insert.CommandType = CommandType.StoredProcedure;
+                insert.Parameters.Add("@email", SqlDbType.VarChar).Value = email;
+                SqlDataAdapter adap = new SqlDataAdapter(insert);
+            }
+            connection = ManageDatabaseConnection("Close");
+            return clientEmail;
+        }
+
+        public DataTable setClientCarnet(int carnet)
+        {
+            DataTable clientCarnet = new DataTable();
+            SqlConnection connection = ManageDatabaseConnection("Open");
+            using (SqlCommand insert = new SqlCommand(@"INSERT_CLIENT", connection))
+            {
+                insert.CommandType = CommandType.StoredProcedure;
+                insert.Parameters.Add("@carnet", SqlDbType.VarChar).Value = carnet;
+                SqlDataAdapter adap = new SqlDataAdapter(insert);
+            }
+            connection = ManageDatabaseConnection("Close");
+            return clientCarnet;
+        }
+
+        public DataTable setClientPlates(int plates)
+        {
+            DataTable clientPlates = new DataTable();
+            SqlConnection connection = ManageDatabaseConnection("Open");
+            using (SqlCommand insert = new SqlCommand(@"INSERT_CLIENT", connection))
+            {
+                insert.CommandType = CommandType.StoredProcedure;
+                insert.Parameters.Add("@plates", SqlDbType.VarChar).Value = plates;
+                SqlDataAdapter adap = new SqlDataAdapter(insert);
+            }
+            connection = ManageDatabaseConnection("Close");
+            return clientPlates;
+        }
+
     }
 }

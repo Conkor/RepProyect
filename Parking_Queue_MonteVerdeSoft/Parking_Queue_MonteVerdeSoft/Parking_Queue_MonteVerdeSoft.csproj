@@ -167,11 +167,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Business\ClientData.cs" />
+    <Compile Include="App_Business\DataTableConnection.cs" />
     <Compile Include="App_Business\LoginData.cs" />
+    <Compile Include="App_Business\MarchamoBusiness.cs" />
+    <Compile Include="App_Business\MarchamoData.cs" />
+    <Compile Include="App_Business\Marchamo_HistoryBusiness.cs" />
+    <Compile Include="App_Business\Marchamo_HistoryData.cs" />
+    <Compile Include="App_Business\ParkingBusiness.cs" />
+    <Compile Include="App_Business\ParkingData.cs" />
+    <Compile Include="App_Business\ReservationBusiness.cs" />
+    <Compile Include="App_Business\ReservationData.cs" />
+    <Compile Include="App_Business\Reservation_HistoryBusiness.cs" />
+    <Compile Include="App_Business\Reservation_HistoryData.cs" />
+    <Compile Include="App_Business\VehicleBusiness.cs" />
+    <Compile Include="App_Business\VehicleData.cs" />
     <Compile Include="App_Entities\Client.cs" />
     <Compile Include="App_Entities\Marchamo.cs" />
+    <Compile Include="App_Entities\Marchamo_History.cs" />
     <Compile Include="App_Entities\Parking.cs" />
     <Compile Include="App_Entities\Reservation.cs" />
+    <Compile Include="App_Entities\Reservation_History.cs" />
     <Compile Include="App_Entities\Vehicle.cs" />
     <Compile Include="App_Entities\vehicleType.cs" />
     <Compile Include="Charts.aspx.cs">
