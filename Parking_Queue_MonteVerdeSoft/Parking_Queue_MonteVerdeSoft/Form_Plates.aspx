@@ -111,14 +111,14 @@
 
                             <div class="form-group">
                                 <label>Ingrese el numero de la placa</label>
-                                <input class="form-control" placeholder="Ejm. 123456789" runat="server" />
+                                <input class="form-control" placeholder="Ejm. 123456789" id="InputPlate" runat="server" />
                             </div>
 
                             <div class="form-group">
 
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="" runat="server" />Moto?  
+                                        <input type="checkbox" value="" id="CxbxMoto" runat="server" />Moto?  
                                     </label>
                                     <p class="help-block">Marque la casilla si la placa pertence a una motocicleta</p>
                                 </div>

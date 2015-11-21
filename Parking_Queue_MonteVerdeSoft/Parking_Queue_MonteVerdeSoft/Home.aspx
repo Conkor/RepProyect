@@ -77,42 +77,42 @@
                 <ul class="nav navbar-nav side-nav">
                     
 					<li class="active">
-                        <a href="index.aspx"><i class="fa fa-fw fa-dashboard"></i> Pagina Principal</a>
+                        <a href="Home.aspx"><i class="fa fa-fw fa-dashboard"></i> Pagina Principal</a>
                     </li>
 					<li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Parqueos <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
 							<li>
-                                <a href="north-parking.aspx">Norte</a>
+                                <a href="Parking_North.aspx">Norte</a>
                             </li>
 						   <li>
-                                <a href="south-parking.aspx">Sur</a>
+                                <a href="Parking_South.aspx">Sur</a>
                             </li>
                             <li>
-                                <a href="east-parking.aspx">Este</a>
+                                <a href="Parking_East.aspx">Este</a>
                             </li>
 							<li>
-                                <a href="west-parking.aspx">Oeste</a>
+                                <a href="Parking_Weast.aspx">Oeste</a>
                             </li>
 							<li>
-                                <a href="MunozyNanne-parking.aspx">Mu&ntilde;oz y Nanne</a>
+                                <a href="Parking_MyN.aspx">Mu&ntilde;oz y Nanne</a>
                             </li>
 							<li>
-                                <a href="indoor-parking.aspx">Bajo Techo</a>
+                                <a href="Parking_InDoor.aspx">Bajo Techo</a>
                             </li>
 							<li>
-                                <a href="Odontology-parking.aspx">Odontologia</a>
+                                <a href="Parking_Odonto.aspx">Odontologia</a>
                             </li>
 							<li>
-                                <a href="CaboRico-parking.aspx">Cabo Rico</a>
+                                <a href="Parking_CaboRico.aspx">Cabo Rico</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="charts.aspx"><i class="fa fa-fw fa-bar-chart-o"></i> Graficos</a>
+                        <a href="Charts.aspx"><i class="fa fa-fw fa-bar-chart-o"></i> Graficos</a>
                     </li>
                     <li>
-                        <a href="tables.aspx"><i class="fa fa-fw fa-table"></i> Tablas</a>
+                        <a href="Tables.aspx"><i class="fa fa-fw fa-table"></i> Tablas</a>
                     </li>
                    
                 </ul>

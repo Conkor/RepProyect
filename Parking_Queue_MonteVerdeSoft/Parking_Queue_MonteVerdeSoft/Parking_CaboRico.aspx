@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                 </button>
 				<img src="Images/ulatinalogo.png"/ width="100">
-                <a class="navbar-brand" href="index.aspx"><i>Parking Queue</i></a>
+                <a class="navbar-brand" href="#"><i>Parking Queue</i></a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -76,43 +76,9 @@
                 <ul class="nav navbar-nav side-nav">
 					
 				   <li>
-                        <a href="index.aspx"><i class="fa fa-fw fa-dashboard"></i> Pagina Principal</a>
+                        <a href="Home.aspx"><i class="fa fa-fw fa-dashboard"></i> Pagina Principal</a>
                     </li>
-					<li>
-                       <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Parqueos <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-							<li>
-                                <a href="north-parking.aspx">Norte</a>
-                            </li>
-						   <li>
-                                <a href="south-parking.aspx">Sur</a>
-                            </li>
-                            <li>
-                                <a href="east-parking.aspx">Este</a>
-                            </li>
-							<li>
-                                <a href="west-parking.aspx">Oeste</a>
-                            </li>
-							<li>
-                                <a href="MunozyNanne-parking.aspx">Mu&ntilde;oz y Nanne</a>
-                            </li>
-							<li>
-                                <a href="indoor-parking.aspx">Bajo Techo</a>
-                            </li>
-							<li>
-                                <a href="Odontology-parking.aspx">Odontologia</a>
-                            </li>
-							<li>
-                                <a href="CaboRico-parking.aspx">Cabo Rico</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="charts.aspx"><i class="fa fa-fw fa-bar-chart-o"></i> Graficos</a>
-                    </li>
-                    <li>
-                        <a href="tables.aspx"><i class="fa fa-fw fa-table"></i> Tablas</a>
-                    </li>
+					
                     
                     
                 </ul>
@@ -139,77 +105,12 @@
                     <img class="img-thumbnail" src="Images/Parqueo Cabo Rico.jpg" width="650" alt="">
                  <aside> 
 				<h2>Solicitar Parqueo</h2>
-				<label for="Espacio">Espacio: </label>&nbsp;<asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
-                         <asp:ListItem>1</asp:ListItem>
-                         <asp:ListItem>2</asp:ListItem>
-                         <asp:ListItem>3</asp:ListItem>
-                         <asp:ListItem>4</asp:ListItem>
-                         <asp:ListItem>5</asp:ListItem>
-                    <asp:ListItem>6</asp:ListItem>
-                    <asp:ListItem>7</asp:ListItem>
-                    <asp:ListItem>8</asp:ListItem>
-                    <asp:ListItem>9</asp:ListItem>
-                    <asp:ListItem>10</asp:ListItem>
-                    <asp:ListItem>11</asp:ListItem>
-                    <asp:ListItem>12</asp:ListItem>
-                    <asp:ListItem>13</asp:ListItem>
-                    <asp:ListItem>14</asp:ListItem>
-                    <asp:ListItem>15</asp:ListItem>
-                    <asp:ListItem>16</asp:ListItem>
-                    <asp:ListItem>17</asp:ListItem>
-                    <asp:ListItem>18</asp:ListItem>
-                    <asp:ListItem>19</asp:ListItem>
-                    <asp:ListItem>20</asp:ListItem>
-                    <asp:ListItem>21</asp:ListItem>
-                    <asp:ListItem>22</asp:ListItem>
-                    <asp:ListItem>23</asp:ListItem>
-                    <asp:ListItem>24</asp:ListItem>
-                    <asp:ListItem>25</asp:ListItem>
-                    <asp:ListItem>26</asp:ListItem>
-                    <asp:ListItem>27</asp:ListItem>
-                    <asp:ListItem>28</asp:ListItem>
-                    <asp:ListItem>29</asp:ListItem>
-                    <asp:ListItem>30</asp:ListItem>
-                    <asp:ListItem>31</asp:ListItem>
-                    <asp:ListItem>32</asp:ListItem>
-                    <asp:ListItem>33</asp:ListItem>
-                    <asp:ListItem>34</asp:ListItem>
-                    <asp:ListItem>35</asp:ListItem>
-                    <asp:ListItem>36</asp:ListItem>
-                    <asp:ListItem>37</asp:ListItem>
-                    <asp:ListItem>38</asp:ListItem>
-                    <asp:ListItem>39</asp:ListItem>
-                    <asp:ListItem>40</asp:ListItem>
-                    <asp:ListItem>41</asp:ListItem>
-                    <asp:ListItem>42</asp:ListItem>
-                    <asp:ListItem>43</asp:ListItem>
-                    <asp:ListItem>44</asp:ListItem>
-                    <asp:ListItem>45</asp:ListItem>
-                    <asp:ListItem>46</asp:ListItem>
-                    <asp:ListItem>47</asp:ListItem>
-                    <asp:ListItem>48</asp:ListItem>
-                    <asp:ListItem>49</asp:ListItem>
-                    <asp:ListItem>50</asp:ListItem>
-                    <asp:ListItem>51</asp:ListItem>
-                    <asp:ListItem>52</asp:ListItem>
-                    <asp:ListItem>53</asp:ListItem>
-                    <asp:ListItem>54</asp:ListItem>
-                    <asp:ListItem>55</asp:ListItem>
-                    <asp:ListItem>56</asp:ListItem>
-                    <asp:ListItem>57</asp:ListItem>
-                    <asp:ListItem>58</asp:ListItem>
-                    <asp:ListItem>59</asp:ListItem>
-                    <asp:ListItem>60</asp:ListItem>
-                    <asp:ListItem>61</asp:ListItem>
-                    <asp:ListItem>62</asp:ListItem>
-                    <asp:ListItem>63</asp:ListItem>
-
-                     </asp:DropDownList>
+				
                      <br />
 				<label for="Tiempo">Tiempo de uso: </label>&nbsp;<asp:TextBox ID="TextBox1" runat="server" Width="46px"></asp:TextBox>
                      <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
                      <br />
-				&nbsp;<asp:Button ID="NorthReserve" runat="server" OnClick="NorthReserve_Click" Text="Reservar" />
+				<button type="submit" class="btn btn-default" id="ButtonRegister" runat="server">Reservar</button>
 				</aside>
                 </section>
                 </div>

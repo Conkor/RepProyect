@@ -5,26 +5,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>Pagina Principal - Parking Queue</title>
-	<link rel="shortcut icon" type="image/x-icon" href="Images/ulatinaicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="Images/ulatinaicon.ico"/>
 
     <!-- Bootstrap Core CSS -->
-    <link href="Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom CSS -->
-    <link href="Content/css/sb-admin.css" rel="stylesheet">
+    <link href="Content/css/sb-admin.css" rel="stylesheet"/>
 
     <!-- Morris Charts CSS -->
-    <link href="Content/css/plugins/morris.css" rel="stylesheet">
+    <link href="Content/css/plugins/morris.css" rel="stylesheet"/>
 
     <!-- Custom Fonts -->
-    <link href="Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,7 +67,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="indexLogin.aspx"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesion</a>
+                            <a href="Login.aspx"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesion</a>
                         </li>
                     </ul>
                 </li>
@@ -77,37 +77,39 @@
                 <ul class="nav navbar-nav side-nav">
                     
 					<li class="active">
-                        <a href="index.aspx"><i class="fa fa-fw fa-dashboard"></i> Pagina Principal</a>
+                        <a href="Home_User.aspx"><i class="fa fa-fw fa-dashboard"></i> Pagina Principal</a>
                     </li>
 					<li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Reservacion <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
 							<li>
-                                <a href="north-parking.aspx">Norte</a>
+                                <a href="Parking_North.aspx">Norte</a>
                             </li>
 						   <li>
-                                <a href="south-parking.aspx">Sur</a>
+                                <a href="Parking_South.aspx">Sur</a>
                             </li>
                             <li>
-                                <a href="east-parking.aspx">Este</a>
+                                <a href="Parking_East.aspx">Este</a>
                             </li>
 							<li>
-                                <a href="west-parking.aspx">Oeste</a>
+                                <a href="Parking_Weast.aspx">Oeste</a>
                             </li>
 							<li>
-                                <a href="MuñozyNanne-parking.aspx">Muñoz y Nanne</a>
-                            </li>
-							
-							<li>
-                                <a href="Odontology-parking.aspx">Odontologia</a>
+                                <a href="Parking_MyN.aspx">Mu&ntilde;oz y Nanne</a>
                             </li>
 							<li>
-                                <a href="CaboRico-parking.aspx">Cabo Rico</a>
+                                <a href="Parking_InDoor.aspx">Bajo Techo</a>
+                            </li>
+							<li>
+                                <a href="Parking_Odonto.aspx">Odontologia</a>
+                            </li>
+							<li>
+                                <a href="Parking_CaboRico.aspx">Cabo Rico</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="plates_form.aspx"><i class="fa fa-fw fa-edit"></i> Registrar Placas</a>
+                        <a href="Form_Plates.aspx"><i class="fa fa-fw fa-edit"></i> Registrar Placas</a>
                     </li>
                    
                 </ul>

@@ -70,6 +70,7 @@
     <Content Include="App_Data\DB_log.ldf">
       <DependentUpon>DB.mdf</DependentUpon>
     </Content>
+    <Content Include="Charts.aspx" />
     <Content Include="Content\css\bootstrap-rtl.css" />
     <Content Include="Content\css\bootstrap-rtl.min.css" />
     <Content Include="Content\css\bootstrap.css" />
@@ -161,6 +162,7 @@
     <Content Include="Scripts\js\plugins\morris\morris.js" />
     <Content Include="Scripts\js\plugins\morris\morris.min.js" />
     <Content Include="Scripts\js\plugins\morris\raphael.min.js" />
+    <Content Include="Tables.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +174,13 @@
     <Compile Include="App_Entities\Reservation.cs" />
     <Compile Include="App_Entities\Vehicle.cs" />
     <Compile Include="App_Entities\vehicleType.cs" />
+    <Compile Include="Charts.aspx.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Charts.aspx.designer.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Data\DataBaseConnection.cs" />
     <Compile Include="Form_Plates.aspx.cs">
       <DependentUpon>Form_Plates.aspx</DependentUpon>
@@ -269,6 +278,13 @@
       <DependentUpon>Parking_West.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables.aspx.cs">
+      <DependentUpon>Tables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tables.aspx.designer.cs">
+      <DependentUpon>Tables.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

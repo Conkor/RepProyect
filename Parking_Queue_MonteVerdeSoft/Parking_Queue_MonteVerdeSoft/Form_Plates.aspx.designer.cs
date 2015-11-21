@@ -13,6 +13,24 @@ namespace Parking_Queue_MonteVerdeSoft {
     public partial class Form_Plates {
         
         /// <summary>
+        /// InputPlate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText InputPlate;
+        
+        /// <summary>
+        /// CxbxMoto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox CxbxMoto;
+        
+        /// <summary>
         /// ButtonRegister control.
         /// </summary>
         /// <remarks>

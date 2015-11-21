@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-				<img src="Images/ulatinalogo.png"/ width="100" style="padding-top:7px">
+				<img src="Images/ulatinalogo.png"/ width="150" style="padding-top:5px" >
                 <a class="navbar-brand" href="#"><i>Parking Queue</i></a>
             </div>
             <!-- Top Menu Items -->
