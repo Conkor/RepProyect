@@ -14,6 +14,9 @@ using Parking_Queue_MonteVerdeSoft.Data;
 using System.Data;
 using iTextSharp.text.html.simpleparser;
 using System.Configuration;
+using System.Diagnostics;
+using System.Net;
+using System.Net.Mail;
 
 namespace Parking_Queue_MonteVerdeSoft
 {
@@ -57,6 +60,36 @@ namespace Parking_Queue_MonteVerdeSoft
             Response.End();
             GridView1.AllowPaging = true;
             GridView1.DataBind();
+        }
+
+        private MailMessage Email;
+        Stopwatch Stop = new Stopwatch();
+
+        protected void btnEPDF_Click(object sender, EventArgs e)
+        {
+            Email = new MailMessage();
+            Email.To.Add(new MailAddress(textBox1.Text));
+            Email.To.Add(new MailAddress(textBox3.Text));
+            Email.Subject = textBox2.Text;
+            Email.IsBodyHtml = true;
+            Email.Body = textBox4.Text;
+            SmtpClient cliente = new SmtpClient("correo aca de servidor", 2525);
+
+            using (cliente)
+            {
+                try
+                {
+                    cliente.Credentials = new System.Net.NetworkCredential(textBox3.Text, textBox5.Text);
+                    cliente.EnableSsl = true;
+                    cliente.Send(Email);
+                    MessageBox.Show("Email enviado correctamente", "Email enviado");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error enviando correo electrónico: " + ex.Message);
+                }
+            }
         }
     }
 }

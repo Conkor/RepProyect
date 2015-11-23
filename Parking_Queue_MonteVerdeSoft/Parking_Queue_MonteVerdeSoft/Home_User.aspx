@@ -177,7 +177,8 @@
                         <SortedDescendingHeaderStyle BackColor="#15524A" />
                     </asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT [Id], [name], [phone], [email], [carnet] FROM [Client]"></asp:SqlDataSource>
-                    <asp:Button ID="btnPDF" runat="server" OnClick="btnPDF_Click" Text="Exportar a PDF" />
+                    <asp:Button ID="btnPDF" runat="server" OnClick="btnPDF_Click" Text="Exportar comprobante a PDF" />
+                    <asp:Button ID="btnEmail" runat="server" OnClick="btnEPDF_Click" Text="Enviar comprobante por correo" />
                     <br />
                     <br />
 
