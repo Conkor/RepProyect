@@ -36,14 +36,14 @@
 
             </p>
         </div>
-        <p class="p-container">
-            <a href="Home_User.aspx">
+        <p class="p-container" style="width: 150px";>
+            <a>
                 <input type="button" name="error" id="error" value="" runat="server" style="width: 49px;"/></a>
             <a >
                 <input onserverclick="go_click" type="button" name="go" id="go" value="Entrar" runat="server" />
             </a>
 
-            <asp:HyperLink ID="HyperLinkRegister" href="Form_Registration.aspx" runat="server">Registrarse</asp:HyperLink>
+            
 
         </p>
     </form>
