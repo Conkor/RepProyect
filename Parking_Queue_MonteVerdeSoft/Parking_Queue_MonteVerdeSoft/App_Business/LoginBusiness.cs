@@ -11,7 +11,7 @@ namespace Parking_Queue_MonteVerdeSoft
         public int CheckUser(int carnet, string password)
         {
             ClientData userData = new ClientData();
-            if (carnet.Equals(string.Empty))
+            if (carnet.Equals(0))
                 return 3;
             if (password.Equals(string.Empty))
                 return 4;

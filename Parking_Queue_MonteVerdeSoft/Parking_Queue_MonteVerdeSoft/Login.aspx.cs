@@ -19,7 +19,7 @@ namespace Parking_Queue_MonteVerdeSoft
             int loginDecision = login.CheckUser(int.Parse(textboxuser.Value), textPassword.Value);
             if (loginDecision == 0)
             {
-                Response.Redirect("index.aspx");
+                Response.Redirect("Home.aspx");
             }
             else if (loginDecision == 1)
             {

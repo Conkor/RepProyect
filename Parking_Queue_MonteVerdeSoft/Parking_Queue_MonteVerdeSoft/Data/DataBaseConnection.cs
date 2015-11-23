@@ -11,7 +11,7 @@ namespace Parking_Queue_MonteVerdeSoft.Data
         public SqlConnection ManageDatabaseConnection(String actionToPerform)
         {
             SqlConnection sqlConnection = new SqlConnection();
-            sqlConnection.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Cris\Desktop\ParkingQueue\ParkingQueue\App_Data\DB.mdf;Integrated Security=True";
+            sqlConnection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Conkor\Documents\GitHubVisualStudio\RepProyect\Parking_Queue_MonteVerdeSoft\Parking_Queue_MonteVerdeSoft\App_Data\DB.mdf;Integrated Security=True";
             try
             {
                 //Decision to weather open or close the database connection

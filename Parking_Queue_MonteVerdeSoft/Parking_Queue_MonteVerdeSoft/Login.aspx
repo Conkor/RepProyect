@@ -39,8 +39,8 @@
         <p class="p-container">
             <a href="Home_User.aspx">
                 <input type="button" name="error" id="error" value="" runat="server" style="width: 49px;"/></a>
-            <a href="Home.aspx">
-                <input type="button" name="go" id="go" value="Entrar" runat="server" />
+            <a >
+                <input onserverclick="go_click" type="button" name="go" id="go" value="Entrar" runat="server" />
             </a>
 
             <asp:HyperLink ID="HyperLinkRegister" href="Form_Registration.aspx" runat="server">Registrarse</asp:HyperLink>

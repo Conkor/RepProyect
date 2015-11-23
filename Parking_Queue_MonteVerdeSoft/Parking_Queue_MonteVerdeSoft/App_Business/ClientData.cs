@@ -15,10 +15,10 @@ namespace Parking_Queue_MonteVerdeSoft.App_Business
         {
             DataTable clientInfo = new DataTable();
             SqlConnection connection = ManageDatabaseConnection("Open");
-            using (SqlCommand select = new SqlCommand(@"Update_Client", connection))
+            using (SqlCommand select = new SqlCommand(@"Select_Client", connection))
             {
                 select.CommandType = CommandType.StoredProcedure;
-                select.Parameters.Add("@Carnet", SqlDbType.VarChar).Value = carnet;
+                select.Parameters.Add("@carnet", SqlDbType.VarChar).Value = carnet;
                 SqlDataAdapter adap = new SqlDataAdapter(select);
                 adap.Fill(clientInfo);
 
@@ -37,7 +37,7 @@ namespace Parking_Queue_MonteVerdeSoft.App_Business
         {
             DataTable dataTablePassword = new DataTable();
             SqlConnection connection = ManageDatabaseConnection("Open");
-            using (SqlCommand select = new SqlCommand(@"Update_Client", connection))
+            using (SqlCommand select = new SqlCommand(@"Select_Client", connection))
             {
                 select.CommandType = CommandType.StoredProcedure;
                 select.Parameters.Add("@password", SqlDbType.VarChar).Value = password;
@@ -52,7 +52,7 @@ namespace Parking_Queue_MonteVerdeSoft.App_Business
         {
             if (dataTablePassword.Rows.Count > 0)
             {
-                if (dataTablePassword.Rows[0]["Password"].ToString().Equals(password))
+                if (dataTablePassword.Rows[0]["password"].ToString().Equals(password))
                 {
                     return true;
                 }
