@@ -125,8 +125,8 @@
 
                             </div>
 
-                            <button type="submit" id="ButtonRegister" class="btn btn-default" runat="server">Registrar</button>
-                            <button type="reset" id="ButtonReset" class="btn btn-default" runat="server">Reset </button>
+                            <button type="submit" onserverclick="ButtonRegister_ServerClick" id="ButtonRegister" class="btn btn-default" runat="server">Registrar</button>
+                            
                     </div>
                 </div>
                 <!-- /.row -->

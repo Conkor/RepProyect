@@ -13,5 +13,10 @@ namespace Parking_Queue_MonteVerdeSoft
         {
 
         }
+
+        protected void ButtonRegister_ServerClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

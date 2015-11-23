@@ -38,14 +38,5 @@ namespace Parking_Queue_MonteVerdeSoft {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlButton ButtonRegister;
-        
-        /// <summary>
-        /// ButtonReset control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton ButtonReset;
     }
 }
