@@ -58,3 +58,6 @@ C:\Users\far31\Documents\GitHubVisualStudio\RepProyect\Parking_Queue_MonteVerdeS
 C:\Users\far31\Documents\GitHubVisualStudio\RepProyect\Parking_Queue_MonteVerdeSoft\Parking_Queue_MonteVerdeSoft\obj\Debug\Parking_Queue_MonteVerdeSoft.csprojResolveAssemblyReference.cache
 C:\Users\far31\Documents\GitHubVisualStudio\RepProyect\Parking_Queue_MonteVerdeSoft\Parking_Queue_MonteVerdeSoft\obj\Debug\Parking_Queue_MonteVerdeSoft.dll
 C:\Users\far31\Documents\GitHubVisualStudio\RepProyect\Parking_Queue_MonteVerdeSoft\Parking_Queue_MonteVerdeSoft\obj\Debug\Parking_Queue_MonteVerdeSoft.pdb
+C:\Users\far31\Documents\GitHubVisualStudio\RepProyect\Parking_Queue_MonteVerdeSoft\Parking_Queue_MonteVerdeSoft\bin\itextsharp.dll
+C:\Users\far31\Documents\GitHubVisualStudio\RepProyect\Parking_Queue_MonteVerdeSoft\Parking_Queue_MonteVerdeSoft\bin\itextsharp.xml
+C:\Users\far31\Documents\GitHubVisualStudio\RepProyect\Parking_Queue_MonteVerdeSoft\Parking_Queue_MonteVerdeSoft\bin\Reports.dll

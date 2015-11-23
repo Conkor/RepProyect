@@ -33,9 +33,24 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style type="text/css">
+        .auto-style1 {
+            width: 123px;
+        }
+        .auto-style2 {
+            width: 123px;
+            height: 26px;
+        }
+        .auto-style3 {
+            height: 26px;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <form id="form1" runat="server">
 
     <div id="wrapper">
 
@@ -126,6 +141,7 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">
                             Pagina Principal <small>Estadisticas Generales</small>
+                            
                         </h1>
                         <ol class="breadcrumb">
                             
@@ -136,152 +152,64 @@
 
                
                 <!-- /.row -->
-
+                
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i> Estadisticas de Uso</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-area-chart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
 
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Grafico en Circulo</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-donut-chart"></div>
-                                <div class="text-right">
-                                    <a href="charts.aspx">Ver Detalles <i class="fa fa-arrow-circle-right"></i></a>
+
+                    <table class="nav-justified">
+                        <tr>
+                            <td class="auto-style1">Nombre:</td>
+                            <td>
+                                <asp:Label ID="lblName" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">Carnet:</td>
+                            <td>
+                                <asp:Label ID="lblCarnet" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">Telefono</td>
+                            <td>
+                                <asp:Label ID="lblPhone" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style1">email:</td>
+                            <td>
+                                <asp:Label ID="lblEmail" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style2"></td>
+                            <td class="auto-style3">
+                                <asp:Button  ID="Button1" runat="server" Text="Exportar a PDF" Width="127px" OnClick="Button1_Click" />
+                            </td>
+                        </tr>
+                    </table>
+                    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                        <Columns>
+                            <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                            <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+                            <asp:BoundField DataField="phone" HeaderText="phone" SortExpression="phone" />
+                            <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
+                            <asp:BoundField DataField="carnet" HeaderText="carnet" SortExpression="carnet" />
+                        </Columns>
+                    </asp:GridView>
+
+
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [name], [phone], [email], [carnet] FROM [Client]"></asp:SqlDataSource>
+
+
+                    <br />
+                    <br />
+                    <br />
+
+                    
+                                        
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Panel de tareas</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">Justo ahora</span>
-                                        <i class="fa fa-fw fa-calendar"></i> Calendario actualizado
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">hace 4 minutos</span>
-                                        <i class="fa fa-fw fa-comment"></i> Commented on a post
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">23 minutes ago</span>
-                                        <i class="fa fa-fw fa-truck"></i> Order 392 shipped
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">46 minutes ago</span>
-                                        <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">1 hour ago</span>
-                                        <i class="fa fa-fw fa-user"></i> A new user has been added
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">2 hours ago</span>
-                                        <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">yesterday</span>
-                                        <i class="fa fa-fw fa-globe"></i> Saved the world
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">two days ago</span>
-                                        <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
-                                    </a>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#">Ver toda la actividad <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Panel de Transacciones</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Order #</th>
-                                                <th>Order Date</th>
-                                                <th>Order Time</th>
-                                                <th>Amount (USD)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>3326</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:29 PM</td>
-                                                <td>$321.33</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3325</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:20 PM</td>
-                                                <td>$234.34</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3324</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:03 PM</td>
-                                                <td>$724.17</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3323</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:00 PM</td>
-                                                <td>$23.71</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3322</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:49 PM</td>
-                                                <td>$8345.23</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3321</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:23 PM</td>
-                                                <td>$245.12</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3320</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:15 PM</td>
-                                                <td>$5663.54</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3319</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:13 PM</td>
-                                                <td>$943.45</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#">ver todas las Transacciones <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -307,6 +235,8 @@
     <script src="Scripts/js/plugins/morris/raphael.min.js"></script>
     <script src="Scripts/js/plugins/morris/morris.min.js"></script>
     <script src="Scripts/js/plugins/morris/morris-data.js"></script>
+
+    </form>
 
 </body>
 </html>
